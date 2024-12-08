@@ -10825,3 +10825,140 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.menu-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Submenu styling */
+.submenu {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+	z-index: 9999; 
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.menu-item:hover > a {
+    background-color: #555; /* Change background color on hover */
+}
+
+
+/* Hover effect for submenu items */
+.submenu li a:hover {
+    color: blue;  /* Highlight the hyperlink in blue */
+    background-color: #333; /* Optional: dark background for contrast */
+}
+
+
+.item {
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: none; /* Hide all items initially */
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+.item.active {
+    display: block; /* Show only active items */
+}
+
+
+
+/* Individual item style */
+.item {
+    width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Hide items initially */
+    visibility: hidden; /* Hide items initially */
+}
+
+/* Hover effect for items */
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state when item is displayed */
+.item.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Header style */
+.item h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+/* Change header background on hover */
+.item h3:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+/* Item text style */
+.item p {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+    padding: 10px;
+    text-align: left;
+    font-weight: 300;
+	
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
