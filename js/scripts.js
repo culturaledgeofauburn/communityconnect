@@ -34,7 +34,7 @@ function cycleGroups() {
 }
 
 // Start cycling every 20 seconds (20000 milliseconds)
-setInterval(cycleGroups, 2000);
+setInterval(cycleGroups, 4000);
 
 // Initial call to show the first group
 cycleGroups();
