@@ -82,7 +82,7 @@
 .image-bg{
     position: relative;
       height: 50vh; /* Half of the viewport height */
-      background: url(../assets/homeBKG.png) no-repeat center center;
+      background: url(../assets/backgroundImg.png) no-repeat center center;
       background-size: cover;
       display: flex;
       align-items: center;
@@ -107,8 +107,13 @@
   .text-on-img {
     position: relative;
     top: -50px;
+    font-weight: bold;
     z-index: 2; /* Content over the overlay */
-    font-family: "Times New Roman";
+  }
+  .subtext {
+    position: relative;
+    top: -50px;
+    z-index: 2; /* Content over the overlay */
   }
 *,
 *::before,
