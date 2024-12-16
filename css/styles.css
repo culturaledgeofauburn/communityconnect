@@ -11013,9 +11013,3 @@ textarea.form-control-lg {
 }
 
 
-@media screen and (max-width: 480px) {
-  img {
-       width: 100%;
-       height:650px;
-  }
-}
