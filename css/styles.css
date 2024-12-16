@@ -10943,7 +10943,7 @@ textarea.form-control-lg {
 
 /* Individual item style */
 .item {
-    width: 250px;
+    /*width: 250px;*/
     padding: 20px;
     background-color: #ffffff;
     border-radius: 12px;
@@ -10998,4 +10998,15 @@ textarea.form-control-lg {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.adds-image {
+  background-image: url("../assets/add1.png");
+  
+  background-size: 160px 110px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:200px;
+  
+  
 }
