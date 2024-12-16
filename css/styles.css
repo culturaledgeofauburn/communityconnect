@@ -79,6 +79,37 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+.image-bg{
+    position: relative;
+      height: 50vh; /* Half of the viewport height */
+      background: url(../assets/homeBKG.png) no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f0f0f0;
+      text-align: center;
+}
+
+/* Dark overlay for text readability */
+.image-bg::before {
+    content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+      z-index: 1; /* z-indez */
+  }
+  
+  /* Style the content */
+  .text-on-img {
+    position: relative;
+    top: -50px;
+    z-index: 2; /* Content over the overlay */
+    font-family: "Times New Roman";
+  }
 *,
 *::before,
 *::after {
