@@ -9,86 +9,60 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         
+        
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+      
     </head>
-    <body>
+    <body style="background-color: #E7E9EB;">
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 76px;">
+          <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">Edge of Auburn Community Connect</a>
+                <a class="navbar-brand" href="#!"><img style="height: 3rem ; width : 14rem" src="assets/eoalogo.png"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">   
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">Events</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-			    
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Edge Of Auburn Logo</a>
-                        </li>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Gallary</a></li>
+                        <li class="nav-item"><a class="nav-link "  href="#">About</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Page header with logo and tagline-->
-        <header class="py-5 bg-light border-bottom mb-4" style="display: none;">
-            <div class="container">
-                <div class="text-center my-5">
-                    <h1 class="fw-bolder">Welcome to Blog Home!</h1>
-                    <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
-                </div>
+        <div class="image-bg">
+            <div>
+                <h1 class="text-on-img">CONNECT, SHARE, AND GROW</h1>
+                <h1 class="text-on-img">TOGETHER</h1>
+                <p1 class="subtext">Building a vibrant community for all residents in Edge of Auburn</p1>
             </div>
-        </header>
+        </div>
         <!-- Page content-->
         <div class="container py-5">
             <div class="row">
                 <!-- Side widgets-->
-                <div class="col-lg-4">
+                <div class="col-lg-4" style="height:100%">
                    
-                    <!-- Categories widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Quick Links</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">New Residence Info</a></li>
-                                        <li><a href="#!">HOA</a></li>
-                                        <li><a href="#!">Trash pickup</a></li>
-                                    </ul>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
                     <!-- Side widget-->
                     <div class="card mb-4">
-                        
                         <div class="card-header">Helpful Links</div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="">
                                     <ul class="list-unstyled mb-0">
+                                        <li><a href="newresidence.html">New Residence Info</a></li>
+                                        <li><a href="#!">HOA</a></li>
+                                        <li><a href="#!">Trash pickup</a></li>
                                         <li><a href="raleighevent.html" title="Raleigh Indian Events">Near by Events</a></li>
-                                        <li><a href="jobs.html" title="Pittsburgh Help Wanted Ads">Indian Jobs</a></li>
+                                        <li><a href="schools.html">Schools</a></li>
+                                        <li><a href="doctor.html">Doctors</a></li>
                                         <li><a href="grocery.html">Grocery</a></li>
                                         <li><a href="showtimes.html">Showtimes</a></li>
                                         <li><a href="restaurant.html">Restaurants</a></li>
-                                        <li><a href="doctor.html">Doctors</a></li>
-                                        <li><a href="worship.html">Place of worship</a></li>
+                                        <li><a href="parks.html">Parks</a></li>
+                                        <li><a href="worship.html">Places of worship</a></li>
                                         <li><a href="game.html">Games</a></li>
                                         <li><a href="accountants.html">Attorneys</a></li>
                                         <li><a href="arts.html">Arts</a></li>
@@ -109,35 +83,7 @@
                 </div>
                 <!-- Blog entries-->
                 <div class="col-lg-8">
-                    <!-- Featured blog post-->
-                    <div class="card mb-4">
-                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active" data-bs-interval="2500">
-                                <img src="assets/homepagebkg.png" class="d-block w-100" style="height:250px;width:350px;">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="2500" >
-                                <img src="assets/homepagebkg1.png" class="d-block w-100" style="height:250px;width:350px;">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="2500" >
-                                <img src="assets/homepagebkg2.png" class="d-block w-100" style="height:250px;width:350px;">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                        <div class="card-body">
-                            
-                           <a class="btn btn-primary" href="#!">Read more →</a>
-                        </div>
-                    </div>
-                    <!-- Nested row for non-featured blog posts-->
+                   
                     <div class="row">
                         <div class="col-lg-6">
                             <!-- Blog post-->
@@ -168,7 +114,7 @@
                                 
                                 <div class="card-body">
                                     <div class="small text-muted">November, 2024</div>
-                                    <h2 class="card-title h4">Diwali</h2>
+                                    <h2 class="card-title h4 subTitleColor">Diwali</h2>
                                     <p class="card-text">The festival gets its name from the row (avali) of clay lamps (deepa) that Indians light outside their homes to symbolize the inner light that protects from spiritual darkness.</p>
                                     <a class="btn btn-primary" href="#!">Gallery →</a>
                                 </div>
@@ -195,8 +141,8 @@
                                   </div>
                                 <div class="card-body">
                                     <div class="small text-muted">October, 2024</div>
-                                    <h2 class="card-title h4">Bathukamma</h2>
-                                    <p class="card-text">In Telugu, ‘Bathukamma' means ‘Mother Goddess come Alive’. Bathukamma is a beautiful flower stack, arranged with different unique seasonal flowers most of them with medicinal values, in seven concentric layers in the shape of a temple gopuram. It is usually brothers who bring flowers to their mother and sisters to arrange bathukamma.</p>
+                                    <h2 class="card-title h4 subTitleColor">Bathukamma</h2>
+                                    <p class="card-text">In Telugu, ‘Bathukamma' means ‘Mother Goddess come Alive’. Bathukamma is a beautiful flower stack, arranged with different unique seasonal flowers most of them with medicinal values, in seven concentric layers in the shape of a temple gopuram.</p>
                                     <a class="btn btn-primary" href="#!">Gallery →</a>
                                 </div>
                             </div>
@@ -208,7 +154,7 @@
                                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active" data-bs-interval="2500">
-                                        <img src="assets/ganeshpuja1.jpg" class="d-block w-100" style="height:250px;width:350px;">
+                                        <img src="assets/ganeshpuja3.png" class="d-block w-100" style="height:250px;width:350px;">
                                         </div>
                                         <div class="carousel-item" data-bs-interval="2500" >
                                         <img src="assets/ganeshpuja2.jpg" class="d-block w-100" style="height:250px;width:350px;">
@@ -228,7 +174,7 @@
                                 
                                 <div class="card-body">
                                     <div class="small text-muted">September, 2024</div>
-                                    <h2 class="card-title h4">Ganesh Chaturthi</h2>
+                                    <h2 class="card-title h4 subTitleColor">Ganesh Chaturthi</h2>
                                     <p class="card-text">Ganesh Chaturthi, in Hinduism, 10-day festival marking the birth of the elephant-headed deity Ganesha, the god of prosperity and wisdom. It begins on the fourth day (chaturthi) of the month of Bhadrapada (August–September), the sixth month of the Hindu calendar.</p>
                                     <a class="btn btn-primary" href="#!">Gallery →</a>
                                 </div>
@@ -250,7 +196,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="small text-muted">October, 2023</div>
-                                    <h2 class="card-title h4">Hallowean</h2>
+                                    <h2 class="card-title h4 subTitleColor">Hallowean</h2>
                                     <p class="card-text">Halloween is a holiday celebrated each year on October 31. The tradition originated with the ancient Celtic festival of Samhain, when people would light bonfires and wear costumes to ward off ghosts.</p>
                                     <a class="btn btn-primary" href="#!">Gallery →</a>
                                 </div>
@@ -261,8 +207,8 @@
                    
                 </div>
                 <!-- Side widgets-->
-                <div class="col-lg-4">
-                    <!-- Search widget-->
+                 <!--   <div class="col-lg-4">
+            
                     <div class="card mb-4 item adds-image">
                         
                         <div class="card-body" >
@@ -316,7 +262,7 @@
                         <div class="card-body">
                            
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Categories widget-->
                     <div class="card mb-4" style="display: none;">
                         <div class="card-header">Categories</div>

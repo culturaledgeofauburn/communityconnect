@@ -3658,11 +3658,12 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  padding-right: 20px;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -3768,7 +3769,7 @@ textarea.form-control-lg {
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-active-color: #b43b36;/* rgba(0, 0, 0, 0.9);*/
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.75rem;
@@ -3831,6 +3832,7 @@ textarea.form-control-lg {
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
   color: var(--bs-navbar-active-color);
+  font-weight: bold;
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -4178,7 +4180,7 @@ textarea.form-control-lg {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: #fff;
+  --bs-navbar-active-color:#b43b36;/* #fff;*/
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
@@ -11039,4 +11041,8 @@ textarea.form-control-lg {
   .btn-primary {
     background-color: #b43b36 !important;
     border-color: #b43b36 !important;
+}
+
+.subTitleColor {
+  color: #b43b36 !important;
 }
