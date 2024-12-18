@@ -280,13 +280,6 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: var(--bs-link-color);
-  text-decoration: underline;
-}
-a:hover {
-  color: var(--bs-link-hover-color);
-}
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -3249,7 +3242,7 @@ textarea.form-control-lg {
 .dropdown-toggle:empty::after {
   margin-left: 0;
 }
-
+/*
 .dropdown-menu {
   --bs-dropdown-zindex: 1000;
   --bs-dropdown-min-width: 10rem;
@@ -3291,8 +3284,8 @@ textarea.form-control-lg {
   background-clip: padding-box;
   border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
   border-radius: var(--bs-dropdown-border-radius);
-}
-.dropdown-menu[data-bs-popper] {
+}*/
+/*.dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
   margin-top: var(--bs-dropdown-spacer);
@@ -3420,7 +3413,7 @@ textarea.form-control-lg {
   left: 100%;
   margin-top: 0;
   margin-left: var(--bs-dropdown-spacer);
-}
+}*/
 .dropend .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
@@ -11045,4 +11038,65 @@ textarea.form-control-lg {
 
 .subTitleColor {
   color: #b43b36 !important;
+}
+
+.dropdown-menu2 {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+
+
+.dropdown-item2 {
+  display: block;
+  width: 100%;
+  padding: .25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+
+.left-nav>.dropdown-menu2 {
+  position: static;
+  display: block;
+}
+
+
+@media (min-width: 576px) {
+  .left-nav {
+      margin-right: 0;
+      margin-left: 0;
+      border-width: 1px;
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
+  }
+}
+
+.left-nav  {
+  position: relative;
+}
+
+
+.dropdown-item2:focus, .dropdown-item2:hover {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+
+.padHeader {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
