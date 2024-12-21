@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <!-- Blog entries-->
-                <div class="col-lg-8" style="background-color: white;background-clip: border-box;border: 1PX solid LIGHTGREY;border-radius: 6px;">
+                <div id="maincontent" class="col-lg-8" style="background-color: white;background-clip: border-box;border: 1PX solid LIGHTGREY;border-radius: 6px;">
                     <div class="col-lg-12">
                         <div class="">
                              <h2 class="card-title h4 subTitleColor padHeader">Gallery</h2>
@@ -87,40 +87,52 @@
                              <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                   <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      Accordion Item #1
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                      Diwali
                                     </button>
                                   </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      Hold tight, we will upload pictures...
                                     </div>
                                   </div>
                                 </div>
                                 <div class="accordion-item">
                                   <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      Accordion Item #2
+                                      Bathukamma
                                     </button>
                                   </h2>
                                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
+                                        Hold tight, we will upload pictures...
+                                      </div>
                                   </div>
                                 </div>
                                 <div class="accordion-item">
                                   <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                      Accordion Item #3
+                                      Ganesh Chaturthi
                                     </button>
                                   </h2>
                                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
+                                        Hold tight, we will upload pictures...
+                                      </div>
                                   </div>
                                 </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Hallowean
+                                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                          Hold tight, we will upload pictures...
+                                        </div>
+                                    </div>
+                                  </div>
                               </div>
                             
                         </div>
@@ -220,5 +232,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            window.onload = function() {
+              document.getElementById("maincontent").focus();
+            }
+            </script>
     </body>
 </html>
