@@ -11100,3 +11100,16 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
+
+.image-bg-carousel{
+    position: relative;
+    height: 50vh; /* Half of the viewport height */
+    
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+    text-align: center;
+}
