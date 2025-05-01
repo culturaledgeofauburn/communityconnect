@@ -43,7 +43,7 @@
             input[type="text"],
             input[type="email"],
             input[type="tel"],
-            input[type="number"] {
+            input[type="number"],select {
               width: 100%;
               padding: 10px;
               margin-bottom: 20px;
@@ -164,12 +164,55 @@
                                         
                                             <label for="kids">Number of Kids:</label>
                                             <input type="number" name="kids" min="0" required>
-                                        
+                                            
+                                            <label for="lane">Street Name</label>
+                                            <input type="text" name="lane" required>
+
                                             <label for="vegCount">Veg Count:</label>
                                             <input type="number" name="vegCount" min="0" required>
                                         
                                             <label for="nonVegCount">Non-Veg Count:</label>
                                             <input type="number" name="nonVegCount" min="0" required>
+                                            
+                                            <label for="foodItem">Food Item:</label>
+                                            <select id="foodItem">
+                                                <option value="Vegetable Samosa ">Vegetable Samosa</option>
+                                                <option value="Onion Pakoda">Onion Pakoda</option>
+                                                <option value="Chicken 65 Or Chicken Starter - Appetizer">Chicken 65 Or Chicken Starter - Appetizer </option>
+                                                <option value="Chole (Chickpea Curry)">Chole (Chickpea Curry)</option>
+                                                <option value="Sambar">Sambar</option>
+                                                <option value="Aloo kurma">Aloo kurma</option>
+                                                <option value="Jeera Rice">Jeera Rice</option>
+                                                <option value="Poori - 1 Full Tray 80 pieces">Poori - 1 Full Tray 80 pieces </option>
+                                                <option value="Veg Biryani">Veg Biryani</option>
+                                                <option value="Chicken Biryani">Chicken Biryani</option>
+                                                <option value="Butter Chicken or Andhra Chicken Curry or Chicken Curry">Butter Chicken or Andhra Chicken Curry or Chicken Curry</option>
+                                                <option value="Fryums / Papads and White Rice">Fryums / Papads and White Rice</option>
+                                                <option value="Raitha and Yogurt">Raitha and Yogurt</option>
+                                                <option value="Salad (Cucumber, Tomato, Onion slices) ">Salad (Cucumber, Tomato, Onion slices) </option>
+                                                <option value="Fruits  - watermelon, Honeydew, Oranges">Fruits  - watermelon, Honeydew, Oranges</option>
+                                                <option value="Carrot Halwa or Moong Dal Halwa Or Halwa">Carrot Halwa or Moong Dal Halwa Or Halwa</option>
+                                                <option value="Ice Cream">Ice Cream (cup versions for easy distribution)</option>
+                                                <option value="Juice Boxes">Juice Boxes (for kids)</option>
+                                                <option value="Soft Drinks">Soft Drinks</option>
+                                                
+                                            </select>
+
+                                            <label for="valuntering">Are you interested in volunteering</label>
+                                            <select id="valuntering">
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                                <option value="nexttime">May be Next time</option>
+                                            </select>
+
+                                            <label for="zelle">is Zelle payment complete </label>
+                                            <select id="zelle">
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                                
+                                            </select>
+
+                                            
                                         
                                             <button type="submit">Submit</button>
                                           </form>
@@ -188,64 +231,6 @@
                 </div>
                
 
-               
-                <!-- Side widgets-->
-                 <!--   <div class="col-lg-4">
-            
-                    <div class="card mb-4 item adds-image">
-                        
-                        <div class="card-body" >
-                           TEXT HERE
-                        </div>
-                    </div>
-                    <div class="card mb-4  item adds-image">
-                       
-                        <div class="card-body">
-                          
-                        </div>
-                    </div>
-                    <div class="card mb-4  item adds-image">
-                        
-                        <div class="card-body">
-                           
-                        </div>
-                    </div>
-					<div class="card mb-4 item adds-image">
-                       
-                        <div class="card-body">
-                           
-                        </div>
-                    </div>
-                    <div class="card mb-4  item adds-image">
-                        
-                        <div class="card-body">
-                           
-                        </div>
-                    </div>
-                    <div class="card mb-4  item adds-image">
-                        
-                        <div class="card-body">
-                            
-                        </div>
-                    </div>
-					<div class="card mb-4 item adds-image">
-                        
-                        <div class="card-body">
-                            
-                        </div>
-                    </div>
-                    <div class="card mb-4  item adds-image">
-                        
-                        <div class="card-body">
-                           
-                        </div>
-                    </div>
-                    <div class="card mb-4  item adds-image">
-                        
-                        <div class="card-body">
-                           
-                        </div>
-                    </div> -->
                     <!-- Categories widget-->
                     <div class="card mb-4" style="display: none;">
                         <div class="card-header">Categories</div>
@@ -287,19 +272,29 @@
             }
 
             const form = document.getElementById('myForm');
+
             form.addEventListener('submit', function(e) {
             e.preventDefault();
+           
+
             const formData = {
                 name: form.name.value,
                 email: form.email.value,
                 phone: form.phone.value,
                 adults: form.adults.value,
                 kids: form.kids.value,
+                lane:form.lane.value,
                 vegCount: form.vegCount.value,
-                nonVegCount: form.nonVegCount.value
+                nonVegCount: form.nonVegCount.value,
+                foodItem:form.foodItem.value,
+                valuntering:form.valuntering.value,
+                zelle:form.zelle.value
+               
+                
+
             };
 
-            fetch('https://script.google.com/macros/s/AKfycbwTWC1Jv57dWdqRpj62dfLdB8joeIcjhch0KBCq5cpFLqWVrZT37VZ5ulDHAKpNVCiD/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbyOD5Wdq4GjBBzF4tjRlJYPngQGC3ZeYus373w4p-GsVzyBi9vcfPAPsRTZYtPw2mwchQ/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 body: JSON.stringify(formData)
