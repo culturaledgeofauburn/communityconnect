@@ -72,6 +72,35 @@
               margin-top: 20px;
               font-weight: bold;
             }
+            .tooltip-icon {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                margin-left: 5px;
+                color: #007BFF;
+                font-weight: bold;
+            }
+
+            .tooltip-icon .tooltip-text {
+                visibility: hidden;
+                width: 160px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                padding: 6px;
+                border-radius: 4px;
+                position: absolute;
+                z-index: 1;
+                top: -5px;
+                left: 120%;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .tooltip-icon:hover .tooltip-text {
+                visibility: visible;
+                opacity: 1;
+            }
           </style>
         
     </head>
@@ -182,25 +211,24 @@
                                             <label for="nonVegCount">Non-Veg Count:</label>
                                             <input type="number" name="nonVegCount" min="0" required>
                                             
-                                            <label for="foodItem">Food Item:</label>
+                                            <label for="foodItem">Food Item:
+                                            <span class="tooltip-icon">ℹ️
+                                                <span class="tooltip-text">1 Full Tray serves approximately 30 people
+                                                    and 1 Small Tray serves 15.</span>
+                                              </span></label>
                                             <select id="foodItem" required>
                                                 <option value=""></option>
-                                                <option value="Vegetable Samosa ">Vegetable Samosa</option>
+                                               
                                                 <option value="Onion Pakoda">Onion Pakoda</option>
                                                 <option value="Chicken 65 Or Chicken Starter - Appetizer">Chicken 65 Or Chicken Starter - Appetizer </option>
-                                                <option value="Chole (Chickpea Curry)">Chole (Chickpea Curry)</option>
-                                                <option value="Sambar">Sambar</option>
-                                                <option value="Aloo kurma">Aloo kurma</option>
-                                                <option value="Jeera Rice">Jeera Rice</option>
-                                                <option value="Poori - 1 Full Tray 80 pieces">Poori - 1 Full Tray 80 pieces </option>
-                                                <option value="Veg Biryani">Veg Biryani</option>
-                                                <option value="Chicken Biryani">Chicken Biryani</option>
-                                                <option value="Butter Chicken or Andhra Chicken Curry or Chicken Curry">Butter Chicken or Andhra Chicken Curry or Chicken Curry</option>
-                                                <option value="Fryums / Papads and White Rice">Fryums / Papads and White Rice</option>
-                                                <option value="Raitha and Yogurt">Raitha and Yogurt</option>
-                                                <option value="Salad (Cucumber, Tomato, Onion slices) ">Salad (Cucumber, Tomato, Onion slices) </option>
-                                                <option value="Fruits  - watermelon, Honeydew, Oranges">Fruits  - watermelon, Honeydew, Oranges</option>
-                                                <option value="Carrot Halwa or Moong Dal Halwa Or Halwa">Carrot Halwa or Moong Dal Halwa Or Halwa</option>
+                                                <option value="Veg Biryani - Small Tray">Veg Biryani- Small Tray</option>
+                                                <option value="Sambar - Full Tray">Sambar- Full Tray</option>
+                                                <option value="Chole (Chickpea Curry)- Small Tary">Chole (Chickpea Curry)- Small Tary</option>
+                                                <option value="White Rice- Full Tray">White Rice- Full Tray</option>
+                                                <option value="Chicken Biryani- Small Tary">Chicken Biryani- Small Tary</option>
+                                                <option value="Chicken Curry- Small Tray">Chicken Curry- Small Tray</option>
+                                                <option value="Salad (Cucumber, Tomato, Onion)- Full Tray ">Salad (Cucumber,Tomato,Onion)- Full Tray</option>
+                                                <option value="Fryums / Papads">Fryums / Papads - Full Tray</option>
                                                 <option value="Ice Cream">Ice Cream (cup versions for easy distribution)</option>
                                                 <option value="Juice Boxes">Juice Boxes (for kids)</option>
                                                 <option value="Soft Drinks">Soft Drinks</option>
@@ -208,7 +236,7 @@
                                             </select>
 
                                             <label for="valuntering">Are you interested in volunteering</label>
-                                            <select id="valuntering" required>
+                                            <select id="valuntering">
                                                 <option value=""></option>
                                                 <option value="yes">Yes</option>
                                                 <option value="no">No</option>
