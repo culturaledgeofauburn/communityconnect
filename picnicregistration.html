@@ -180,7 +180,9 @@
                             <span >6404 Lake Wheeler Rd, Raleigh, NC 27603</span>    
                         </br></br>
                             <span> 
-                                To help reduce costs 💰 and ease the burden on each family 🏡, we’re encouraging everyone to bring a dish of their choice 🍽️. This way, we can enjoy a delicious 😋, diverse 🍛 meal together—while keeping it simple for everyone. 🍲🍕🥗🍰  Please 📝 choose an item from the dropdown list 🔽 so we can avoid duplicates and ensure a good variety ✅ Let’s make this a fun 🎉, collaborative 🤝, and memorable 🥳 gathering for our EOA community! ❤️ 
+                                To help reduce costs 💰, we kindly encourage greater participation and humbly request your support through volunteer contributions to the potluck 🏡. We invite everyone to bring a dish of their choice 🍽️—this way, we can share a delicious 😋 and diverse 🍛 meal together, all while keeping things simple and enjoyable for everyone. 🍲🍕🥗🍰
+📋 Once registrations are complete, we’ll reach out to all registered participants 🍽️ for the food signup.
+✅ Let’s make this a fun 🎉, collaborative 🤝, and memorable 🥳 gathering for our EOA community! ❤️    
                             </span>
                             <div class="accordion" id="accordionExample">
                                 <div class="card-body" style="font-weight: bold;">
@@ -199,7 +201,7 @@
                                             <label for="adults">Number of Adults:</label>
                                             <input type="number" name="adults" min="0" required>
                                         
-                                            <label for="kids">Number of Kids:</label>
+                                            <label for="kids">Number of Kids (Under 10 Years):</label>
                                             <input type="number" name="kids" min="0" required>
                                             
                                             <label for="lane">Street Name</label>
@@ -212,28 +214,11 @@
                                             <input type="number" name="nonVegCount" min="0" required>
                                             
                                             <label for="foodItem">Food Item:
-                                            <span class="tooltip-icon">ℹ️
-                                                <span class="tooltip-text">1 Full Tray serves approximately 30 people
-                                                    and 1 Small Tray serves 15.</span>
-                                              </span></label>
-                                            <select id="foodItem" required>
-                                                <option value=""></option>
-                                               
-                                                <option value="Onion Pakoda">Onion Pakoda</option>
-                                                <option value="Chicken 65 Or Chicken Starter - Appetizer">Chicken 65 Or Chicken Starter - Appetizer </option>
-                                                <option value="Veg Biryani - Small Tray">Veg Biryani- Small Tray</option>
-                                                <option value="Sambar - Full Tray">Sambar- Full Tray</option>
-                                                <option value="Chole (Chickpea Curry)- Small Tary">Chole (Chickpea Curry)- Small Tary</option>
-                                                <option value="White Rice- Full Tray">White Rice- Full Tray</option>
-                                                <option value="Chicken Biryani- Small Tary">Chicken Biryani- Small Tary</option>
-                                                <option value="Chicken Curry- Small Tray">Chicken Curry- Small Tray</option>
-                                                <option value="Salad (Cucumber, Tomato, Onion)- Full Tray ">Salad (Cucumber,Tomato,Onion)- Full Tray</option>
-                                                <option value="Fryums / Papads">Fryums / Papads - Full Tray</option>
-                                                <option value="Ice Cream">Ice Cream (cup versions for easy distribution)</option>
-                                                <option value="Juice Boxes">Juice Boxes (for kids)</option>
-                                                <option value="Soft Drinks">Soft Drinks</option>
-                                                
-                                            </select>
+                                            
+                                            <span style="color: red;">
+                                                Once registraions are complete, we will contact all registered participants
+                                                for food sign up.  </span></label></br>
+                                            
 
                                             <label for="valuntering">Are you interested in volunteering</label>
                                             <select id="valuntering">
@@ -332,7 +317,7 @@
                 lane:form.lane.value,
                 vegCount: form.vegCount.value,
                 nonVegCount: form.nonVegCount.value,
-                foodItem:form.foodItem.value,
+                foodItem:"",
                 valuntering:form.valuntering.value,
                 zelle:form.zelle.value
                
