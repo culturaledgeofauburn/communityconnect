@@ -12,7 +12,47 @@
         
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-      
+        <style>
+            /* Style the image */
+            .thumbnail {
+              
+              cursor: pointer;
+              transition: 0.3s;
+              height:100%;
+              width:100%;
+            }
+
+            /* Modal styling */
+            .modal {
+              display: none;
+              position: fixed;
+              z-index: 999;
+              padding-top: 60px;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgba(0,0,0,0.8);
+            }
+
+            .modal-content {
+              display: block;
+              margin: auto;
+              max-width: 80%;
+              
+            }
+
+            .close {
+              position: absolute;
+              top: 30px;
+              right: 45px;
+              color: white;
+              font-size: 40px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+        </style>
     </head>
     <body style="background-color: #E7E9EB;">
         <!-- Responsive navbar-->
@@ -80,14 +120,77 @@
                 </div>
                 <!-- Blog entries-->
                 <div id="maincontent"  tabindex="0" class="col-lg-8" style="background-color: white;background-clip: border-box;border: 1PX solid LIGHTGREY;border-radius: 6px;">
-                    <div class="col-lg-12">
-                        <div class="">
-                             <h2 class="card-title h4 subTitleColor padHeader">Gallery</h2>
-                              
+                  <div class="col-lg-12">
+                     <div class="">
+                        <h2 class="card-title h4 subTitleColor padHeader">Gallery - 2025</h2>
+                         <div class="accordion" id="accordionExample">
                             
-                             <div class="accordion" id="accordionExample">
 
-                              <div class="accordion-item">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Ganesh Chaturthi
+                                  </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <div class="container"><!--Image div start-->
+                                          <div class="row">
+                                            <div class="col">
+                                              <img src="assets/ganeshpuja2025/mix1.png" alt="Click to Enlarge" class="thumbnail" onclick="openModal(this.src)" />
+                                            </div>
+                                            <div class="col">
+                                              <img src="assets/ganeshpuja2025/mix2.png" alt="Click to Enlarge" class="thumbnail" onclick="openModal(this.src)" />
+                                            </div>
+                                          </div>
+                                           </br>
+                                          <div class="row">
+                                              <div class="col">
+                                                 <img src="assets/ganeshpuja2025/mix3.png" alt="Click to Enlarge" class="thumbnail" onclick="openModal(this.src)" />
+                                              </div>
+                                              <div class="col">
+                                                 <img src="assets/ganeshpuja2025/mix4.png" alt="Click to Enlarge" class="thumbnail" onclick="openModal(this.src)" />
+                                              </div>
+                                          </div>
+                                      </br>
+                                      <div class="row">
+                                          <div class="col">
+                                            <img src="assets/ganeshpuja2025/mix5.png" alt="Click to Enlarge" class="thumbnail" onclick="openModal(this.src)" />
+                                          </div>
+                                          <div class="col">
+                                             <img src="assets/ganeshpuja2025/mix6.png" alt="Click to Enlarge" class="thumbnail" onclick="openModal(this.src)" />
+                                          </div>
+                                      </div></br>
+                                      <div class="row">
+                                          <div class="col">
+                                             <img src="assets/ganeshpuja2025/mix7.png" alt="Click to Enlarge" class="thumbnail" onclick="openModal(this.src)" />
+                                          </div>
+                                          <div class="col">
+                                            
+                                          </div>
+                                      </div></br>
+                                     
+                                      
+                                      <div class="row">
+                                        <div class="col">
+                                         
+                                          
+                                        </div>
+                                        <div class="col">
+                                         
+                                        </div>
+                                    </div></br>
+                                      
+                                     
+                                      </div><!--Image div end-->
+                                  </div>
+                                </div>
+                              </div> <!--Ganesh Chaturthi Accordion div end-->
+
+
+
+                          
+                            <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingSix">
                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     Picnic
@@ -160,7 +263,8 @@
                                       </div><!--Image div end-->
                                   </div>
                                 </div>
-                              </div>
+                              </div> <!--Picnic Accordion div end-->
+                              
 
                               <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFive">
@@ -238,11 +342,20 @@
                                       </div><!--Image div end-->
                                   </div>
                                 </div>
-                              </div>
+                              </div><!-- Holi accordion ends-->
 
 
+                         </div>
+                     </div>
+                  </div>  
+                  <div class="col-lg-12">
+                        <div class="">
+                             <h2 class="card-title h4 subTitleColor padHeader">Gallery - 2024</h2>
+                              
+                            
+                             <div class="accordion" id="accordionExample">
 
-
+                              
                                 <div class="accordion-item">
                                   <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -475,5 +588,22 @@
               document.getElementById("maincontent").focus();
             }
             </script>
+
+            <!-- The Modal -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage">
+        </div>
+
+        <script>
+          function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("imageModal").style.display = "block";
+          }
+
+          function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+          }
+        </script>
     </body>
 </html>
